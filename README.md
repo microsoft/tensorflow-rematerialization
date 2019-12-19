@@ -2,7 +2,7 @@
 
 This project brings an interface to use rematerialization in the TensorFlow XLA Compiler.
 
-# Instaling
+# Installing
 
 This patch adds rematerialization support to TensorFlow 2.0 XLA branch. To install it, execute the following commands:
 
