@@ -65,6 +65,11 @@ Example:
 TF_XLA_FLAGS="--tf_xla_auto_jit=2" XLA_FLAGS="--xla_dump_to=dump --xla_dump_hlo_as_text --xla_use_hlo_rematerialization --xla_rematerialization_mem_limit=1073741824 --xla_rematerialization_algorithm=path --xla_rematerialization_small_node_limit=1" python resnet_cifar_main.py
 ```
 
+Using TensorFlow XLA automatic rematerialization can reduce the amount of memory necessary to run a model helping it to fit in the your accelerator memory.
+
+![memory before and after using XLA rematerialization](https://raw.githubusercontent.com/microsoft/tensorflow-rematerialization/master/mem_remat.png?token=AAGIC227NYZFIQKQ3YIE3BS6AYHOI)
+
+
 # Contributing
 
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a
