@@ -67,7 +67,7 @@ TF_XLA_FLAGS="--tf_xla_auto_jit=2" XLA_FLAGS="--xla_dump_to=dump --xla_dump_hlo_
 
 # Results
 
-Using TensorFlow XLA automatic rematerialization can reduce the amount of memory necessary to run a model helping it to fit in your accelerator memory.
+Using rematerialization in TensorFlow XLA can help reduce the amount of memory necessary to run a model making it fit in your accelerator.
 
 ![memory before and after using XLA rematerialization](https://raw.githubusercontent.com/microsoft/tensorflow-rematerialization/master/mem_remat.png?token=AAGIC227NYZFIQKQ3YIE3BS6AYHOI)
 
